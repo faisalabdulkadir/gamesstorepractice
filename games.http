@@ -1,0 +1,29 @@
+GET http://localhost:5103/games
+
+###
+GET http://localhost:5103/games/7
+
+###
+POST http://localhost:5103/games
+Content-Type: application/json
+
+{
+    "name": "Call of Duty: Modern Warfare II",
+    "genre": "FPS",
+    "releaseDate": "2022-10-28",
+    "price": 69.99
+}
+
+###
+PUT http://localhost:5103/games/4
+Content-Type: application/json
+
+ {
+    "name": "Red Dead Redemption 7",
+    "genre": "Action-Adventure",
+    "releaseDate": "2018-10-26",
+    "price": 45.99
+  }
+
+###
+DELETE http://localhost:5103/games/4
